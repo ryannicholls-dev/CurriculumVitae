@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --max-width: 1920px;
+    --header-font: 'Libre Caslon Display';
+    --primary-color: #f9f9f9;
+    --secondary-color: #d2d3c3;
+}
+
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+}
+
+.about-me, .photo-card {
+    height: 100vh;
+}
+
+.about-me {
+    background-color: var(--primary-color);
+}
+
+.about-me .tech-stack {
+    color: var(--secondary-color);
+}
+
+.photo-card {
+    height: 100vh;
+    background-color: var(--secondary-color); 
+    background: repeating-linear-gradient(
+        to right,
+        var(--primary-color) 0px,
+        var(--primary-color) 2px,
+        var(--secondary-color) 2px,
+        var(--secondary-color) 40px
+      );
+}
+
+.name-heading {
+    font-family: var(--header-font);
+    font-size: 5vw;
+}
+
+.sub-heading {
+    font-size: 1.2vw;
+    letter-spacing: 4px;
+}
+
+@media (max-width: 576px) {
+    .name-heading {
+        font-size: 12vw;
+    }
+    .sub-heading {
+        font-size: small;
+    }
+}
