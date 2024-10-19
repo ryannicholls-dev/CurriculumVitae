@@ -12,6 +12,7 @@
     --header-font: 'Libre Caslon Display';
     --primary-color: #f9f9f9;
     --secondary-color: #d2d3c3;
+    --secondary-font-color: #98998e;
 }
 
 body {
@@ -21,7 +22,7 @@ body {
     width: 100%;
 }
 
-.about-me, .photo-card {
+.about-me, .cv {
     height: 100vh;
 }
 
@@ -30,19 +31,34 @@ body {
 }
 
 .about-me .tech-stack {
-    color: var(--secondary-color);
+    color: var(--secondary-font-color);
+}
+
+.about-me .slash {
+    color: black;
+}
+
+.about-me .scroll-text {
+    position: relative;
+    top: 30%;
 }
 
 .photo-card {
-    height: 100vh;
-    background-color: var(--secondary-color); 
+    background-color: var(--secondary-color);
     background: repeating-linear-gradient(
         to right,
         var(--primary-color) 0px,
         var(--primary-color) 2px,
         var(--secondary-color) 2px,
         var(--secondary-color) 40px
-      );
+    );
+}
+
+.photo-card .headshot { 
+    object-fit: cover;
+    aspect-ratio: 9/9;
+    height: 25vh;
+    border-radius: 80%;
 }
 
 .name-heading {
@@ -52,7 +68,51 @@ body {
 
 .sub-heading {
     font-size: 1.2vw;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
+}
+
+/* CV SECTION */
+
+.cv {
+    background-color: var(--primary-color); 
+}
+
+.cv .headings {
+    height: 80%;
+    width: 80%;
+}
+
+.cv h1 {
+    font-size: 3vw;
+}
+
+.cv h1, h2 {
+    padding: 0;
+    margin: 0;
+    letter-spacing: 5px;
+    color: var(--secondary-font-color);
+}
+
+.cv h2 {
+    padding: 0;
+}
+
+.cv h3 {
+    padding: 0;
+    color: var(--secondary-color);
+    letter-spacing: 3px;
+}
+
+.cv p {
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+}
+
+.spacer {
+    height: 2px;
+    width: 100%;
+    background-color: var(--secondary-color);
 }
 
 @media (max-width: 576px) {

@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css ">
-    
+
     <title>Ryan Nicholls - C# Developer</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
@@ -31,17 +33,47 @@
     </header>
 
     <div class="container-fluid">
-        <div class="row">
-
-            <div class="d-flex flex-column justify-content-center align-items-center col-12 col-md-6 about-me">
+        <section class="row about-me" id="about-me-section">
+            <div class="d-flex flex-column justify-content-center align-items-center col-12 col-md-6">
                 <h1 class="name-heading">Ryan Nicholls</h1>
                 <p class="sub-heading">.NET software developer</p>
-                <p class="tech-stack">azure / c# / blazor / sql</p>
+                <p class="tech-stack">azure <span class="slash">/</span> c# <span class="slash">/</span> blazor <span class="slash">/</span> entity framework <span class="slash">/</span> sql</p>
+                <p class="scroll-text">see more ↓</p>
             </div>
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center photo-card">
+                <div class="photo-card-content">
+                    <img class="headshot" src="/assets/headshot.jpg" alt="Ryan Nicholls Headshot">
+                    <div class="justify-content-center align-items-start mt-5">
+                        <p>location: birmingham</p>
+                        <p>phone: 07740 349092</p>
+                        <p>email: ryannichollsdeveloper@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <div class="col-12 col-md-6 photo-card"></div>
-        </div>
+        <section class="row cv" id="cv-section">
+            <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+                <div class="row d-flex flex-column headings">
+                    <h1 class="mb-5">curriculum vitae</h1>
+                    <div class="mb-5"></div>
+                    <h2 class="mb-4">about</h2>
+                    <p class="mb-5">I have spent almost 10 years working in a fast paced, agile software development environment.
+                    My journey started as an IT apprentice, before spending two years in quality assurance whilst learning software development. I then moved into a full stack software development role in 2019, using blazor and entity framework for front and back end.
+                    Whilst fulfilling business case developments, I run a team as a scrum master, mentor apprentices, actively develop our centralised frameworks and ensure the harmonious integration of development and operations by enforcing and developing DevOps principles. </p>
+                    <div class="spacer mb-5"></div>
+                    <h2 class="mb-4">work experience</h2>
+                    <h3>2015 - present / <span>PHOENIX Medical Supplies</span></h3>
+                </div>
+                
+            </div>
+            
+
+        </section>
+
+        
     </div>
 
 </body>
+
 </html>
