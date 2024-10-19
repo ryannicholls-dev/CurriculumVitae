@@ -43,7 +43,7 @@ body {
     top: 30%;
 }
 
-.photo-card {
+.stripes {
     background-color: var(--secondary-color);
     background: repeating-linear-gradient(
         to right,
