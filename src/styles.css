@@ -53,6 +53,8 @@ body {
 .about-me .scroll-text {
     position: relative;
     top: 30%;
+    text-decoration: none;
+    color: var(--font-color);
 }
 
 .about-me p {
