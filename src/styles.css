@@ -43,7 +43,6 @@ body {
     scroll-snap-type: y mandatory;
 }
 
-
 .about-me,
 .cv {
     height: 100vh;
