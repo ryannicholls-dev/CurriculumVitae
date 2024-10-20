@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --max-width: 2056px;
+    --header-font: 'Libre Caslon Display';
+    --font-color: #525252;
+    --secondary-font-color: #525252;
+    --primary-color: #f9f9f9;
+    --secondary-color: #d2d3c3;
+    --secondary-font-color: #98998e;
+}
+
+.navbar {
+    max-width: var(--max-width);
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+}
+
+body {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+.scroll-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.about-me,
+.cv {
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
+}
+
+.about-me {
+    background-color: var(--primary-color);
+}
+
+.about-me .tech-stack {
+    color: var(--secondary-font-color);
+}
+
+.about-me .slash {
+    color: black;
+}
+
+.about-me .scroll-text {
+    position: relative;
+    top: 350px;
+    text-decoration: none;
+    color: var(--font-color);
+    transform: translateY(-50%);
+}
+
+.about-me p {
+    color: var(--font-color);
+}
+
+.stripes {
+    background-color: var(--secondary-color);
+    background: repeating-linear-gradient(to right,
+            var(--primary-color) 0px,
+            var(--primary-color) 2px,
+            var(--secondary-color) 2px,
+            var(--secondary-color) 40px);
+}
+
+.photo-card .headshot {
+    object-fit: cover;
+    aspect-ratio: 9/9;
+    height: 25vh;
+    border-radius: 80%;
+}
+
+.photo-card-content {
+    position: fixed;
+}
+
+.name-heading {
+    font-family: var(--header-font);
+    font-size: 5rem;
+    color: var(--font-color);
+}
+
+.sub-heading {
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    color: var(--font-color);
+}
+
+/* CV SECTION */
+
+.cv {
+    background-color: var(--primary-color);
+    height: auto;
+}
+
+.cv .headings {
+    height: 100%;
+    width: 80%;
+    overflow-y: auto;
+    scroll-snap-type: none;
+}
+
+.cv h1 {
+    font-size: 3rem;
+}
+
+.cv h1,
+h2 {
+    padding: 0;
+    margin: 0;
+    letter-spacing: 5px;
+    color: var(--secondary-font-color);
+}
+
+.cv h2 {
+    padding: 0;
+}
+
+.cv h3 {
+    padding: 0;
+    color: var(--secondary-color);
+    letter-spacing: 3px;
+}
+
+.cv h5 {
+    padding: 0;
+    letter-spacing: 1.5px;
+    color: var(--secondary-font-color)
+}
+
+.cv p {
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+}
+
+.spacer {
+    height: 2px;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+@media (max-width: 576px) {
+    .name-heading {
+        font-size: 12vw;
+    }
+
+    .sub-heading {
+        font-size: small;
+    }
+
+    .about-me .scroll-text {
+        top: 150px;
+    }
+
+    ul {
+        list-style-type: disc; 
+        margin-left: 20px; 
+        padding-left: 20px; 
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    .cv p {
+        text-align: left;
+    }
+}
