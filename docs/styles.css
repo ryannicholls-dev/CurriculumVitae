@@ -35,6 +35,7 @@ body {
 }
 
 .scroll-container {
+    max-width: var(--max-width);
     position: relative;
     width: 100vw;
     height: 100vh;
