@@ -35,6 +35,29 @@ body {
     overflow-x: hidden;
 }
 
+.nav-link{
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    padding: 10px 10px;
+    transition: background-color 0.5s ease; 
+}
+
+.nav-link:hover {
+    background-color: var(--secondary-color);
+}
+
+a {
+    color: var(--font-color);
+}
+
+li {
+    padding-bottom: 0.5em;
+}
+
+h5 {
+    margin-bottom: 1em;
+}
+
 .scroll-container {
     max-width: var(--max-width);
     position: relative;
@@ -70,6 +93,11 @@ body {
     text-decoration: none;
     color: var(--font-color);
     transform: translateY(-50%);
+    transition: color 0.5s ease; 
+}
+
+.scroll-text:hover {
+    color: var(--secondary-color);
 }
 
 .about-me p {
