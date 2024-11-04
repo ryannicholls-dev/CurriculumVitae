@@ -35,6 +35,17 @@ body {
     overflow-x: hidden;
 }
 
+.nav-link{
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    padding: 10px 10px;
+    transition: background-color 0.5s ease; 
+}
+
+.nav-link:hover {
+    background-color: var(--secondary-color);
+}
+
 a {
     color: var(--font-color);
 }
@@ -82,6 +93,11 @@ h5 {
     text-decoration: none;
     color: var(--font-color);
     transform: translateY(-50%);
+    transition: color 0.5s ease; 
+}
+
+.scroll-text:hover {
+    color: var(--secondary-color);
 }
 
 .about-me p {
