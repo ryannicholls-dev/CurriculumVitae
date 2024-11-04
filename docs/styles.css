@@ -35,6 +35,18 @@ body {
     overflow-x: hidden;
 }
 
+a {
+    color: var(--font-color);
+}
+
+li {
+    padding-bottom: 0.5em;
+}
+
+h5 {
+    margin-bottom: 1em;
+}
+
 .scroll-container {
     max-width: var(--max-width);
     position: relative;
