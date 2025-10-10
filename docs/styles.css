@@ -184,6 +184,11 @@ h2 {
     text-align: justify;
 }
 
+.cv b {
+    color: var(--font-color);
+    letter-spacing: 1.5px;
+}
+
 .spacer {
     height: 2px;
     width: 100%;
